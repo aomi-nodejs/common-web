@@ -1,6 +1,6 @@
 {
   "name": "@aomi/common-web",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
   "license": "MIT",
@@ -17,6 +17,11 @@
     "CHANGELOG.md"
   ],
   "exports": {
+    "./nestjs/filters": {
+      "require": "./cjs/nestjs/filters/*.js",
+      "types": "./types/nestjs/filters/*.d.ts",
+      "import": "./esm/nestjs/filters/*.js"
+    },
     "./nestjs/interceptors": {
       "require": "./cjs/nestjs/interceptors/*.js",
       "types": "./types/nestjs/interceptors/*.d.ts",
