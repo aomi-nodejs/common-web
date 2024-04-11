@@ -1,0 +1,14 @@
+{
+  "extends": "@aomi/typescript-config/tsconfig.build.json",
+  "compilerOptions": {
+    "declarationDir": "types",
+    "module": "Node16",
+    "moduleResolution": "node16"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "test",
+  ]
+}
