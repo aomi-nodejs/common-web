@@ -5,8 +5,8 @@ import { ServiceError } from '@aomi/common-exception/exceptions/service.error';
 import { ErrorCode } from '@aomi/common-exception/error-code';
 
 @Catch()
-export class ExceptionInterceptor extends BaseExceptionFilter {
-  private readonly logger = new Logger(ExceptionInterceptor.name);
+export class ExceptionFilter extends BaseExceptionFilter {
+  private readonly logger = new Logger(ExceptionFilter.name);
 
   catch(exception: any, host: ArgumentsHost) {
     const ctx = host.switchToHttp();
